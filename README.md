@@ -26,14 +26,14 @@ _Assumes a fresh or stable install of Pattern Lab and all its dependencies._
       <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=logo&w=200&h=40" style="margin: 0 auto; display: block; height: 2em; padding: 5px;" alt="Styleguide logo"/>
     </li>
      ```
- * Add your logo url and style as needed
+ * Add your logo url and style as needed.
  * If you like, move `<li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">All</a></li>` after your logo entry, or make the logo your link to all patterns.
     * Something like:
 
       ```html
       <li>
         <a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">
-          <img src="http://roydan.com/wp-content/themes/Roydan/img/img_logo.png" style="margin: 0 auto; display: block; height: 2em;"/>
+          <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=logo&w=200&h=40" style="margin: 0 auto; display: block; height: 2em;"/>
         </a>
       </li>
       ```
