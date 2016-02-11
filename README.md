@@ -17,3 +17,23 @@ _Assumes a fresh or stable install of Pattern Lab and all its dependencies._
  * Prior versions housed `styleguide/` directly in `./public/`
 2. Overwrite the `styleguide` directory with the `styleguide/` directory from this repository
 3. Find `./source/_patternlab-files/index.mustache` and overwrite it with the contents of `index.mustache` in this repository.
+4. Optionally: If you'd like your logo displayed above the navigation like the screenshot shows, do the following:
+ * Find `./source/_patternlab-files/partials/patternNav.mustache`
+ * Add the following block **after** line 1, just inside `<ol class="sg-nav">`:
+
+     ```html
+    <li>
+      <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=logo&w=200&h=40" style="margin: 0 auto; display: block; height: 2em; padding: 5px;" alt="Styleguide logo"/>
+    </li>
+     ```
+ * Add your logo url and style as needed
+ * If you like, move `<li><a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">All</a></li>` after your logo entry, or make the logo your link to all patterns.
+    * Something like:
+
+      ```html
+      <li>
+        <a href="styleguide/html/styleguide.html" class="sg-pop" data-patternpartial="all">
+          <img src="http://roydan.com/wp-content/themes/Roydan/img/img_logo.png" style="margin: 0 auto; display: block; height: 2em;"/>
+        </a>
+      </li>
+      ```
