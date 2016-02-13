@@ -20,8 +20,6 @@
 		sw = document.body.clientWidth;
 		sh = $(document).height();
 
-		setAccordionHeight();
-
 		if(fullMode === true) {
 			sizeiframe(sw, false);
 		};
@@ -46,17 +44,7 @@
 		//Activate selected panel
 		$this.toggleClass('active');
 		$panel.toggleClass('active');
-		setAccordionHeight();
 	});
-
-	//Accordion Height
-	function setAccordionHeight() {
-		var $activeAccordion = $('.sg-acc-panel.active').first(),
-			accordionHeight = $activeAccordion.height(),
-			availableHeight = sh-$headerHeight; //Screen height minus the height of the header
-
-		$activeAccordion.height(availableHeight); //Set height of accordion to the available height
-	}
 
 	$('.sg-nav-toggle').on("click", function(e){
 		e.preventDefault();
