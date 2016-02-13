@@ -181,11 +181,6 @@
     float: left;
     position: relative;
   }
-  .sg-nav > li > ol {
-    position: absolute;
-    top: 2em;
-    left: 0;
-  }
 }
 
 /*------------------------------------*
@@ -220,14 +215,9 @@
 /* Accordion */
 .sg-acc-handle:after {
   content: ' +';
-  float: right;
   font-size: 70%;
 }
-@media all and (min-width: 48em) {
-  .sg-acc-handle:after {
-    float: none;
-  }
-}
+}*/
 .sg-acc-handle.active {
   color: #fff;
   background: rgba(255, 255, 255, 0.05);
